@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GifTastic</title>
+
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+  
+  <div class="container">
+
+    <h1>Car Search</h1>
+
+    <form id="car-form">
+      <label for="car-input">Add a new car</label>
+      <input type="text" id="car-input" class="form-control">
+      <input id="add-car" type="submit" value="Add a new car" class="btn btn-default">
+    </form>
+
+    <input id="reset" type="submit" value="Reset All Searches" class="btn btn-default">
+
+    <div><input id="child-friendly" type="checkbox" checked=true gif-rating="G"><span id="checkbox-label">Child Friendly</span></div>
+
+    <div id="buttons-view"></div>
+    
+    <div id="cars-view"></div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Javascript files -->
+    <script src="assets/javascript/javascript.js"></script>  
+  </div>
+
+</body>

@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#e8dfff;
+}
+
+h1 {
+  font-family: "Carter One";
+  font-size: 8vh;
+  color:#3b4cc2;
+}
+
+button, div, form, input {
+  margin: 5px !important;
+}
+
+button-color {
+  background-color: magenta !important;
+}
+
+#car-form {
+  display:inline;
+}
+
+#buttons-view {
+  width:100%;
+}
+
+#car-input {
+  width:30%;
+  display:inline;
+}
+
+#cars-view div {
+  border: 2px solid blue;
+  padding: 5px;
+  background-color:#3b4cc1;
+}
+
+#cars-view img {
+  cursor: pointer;
+}
+
+#cars-view img:hover {
+  -webkit-box-shadow: 0px 0px 15px pink;
+  -moz-box-shadow: 0px 0px 15px pink;
+  box-shadow: 0px 0px 15px pink;
+}
+
+#cars-view p {
+  font-weight: bold;
+  font-size:3vh;
+  text-align: center;
+  color:#ddd;
+}
+
+#checkbox-label {
+  margin:5px;
+  font-size: 3vh;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+}

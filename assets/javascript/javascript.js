@@ -14,6 +14,9 @@ $(document).ready(function() {
       method: "GET"
     }).done(function(response) {
       $("#cars-view").html("");
+      if(response.data.length === 0) {
+        $("#cars-view").html("<h3>No Results</h3>");
+      }
       for(var i=0; i<response.data.length; i++) {
         var newDiv = $("<div>");
         var newImg = $("<img>");
@@ -48,7 +51,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var car = $("#car-input").val().trim();
-    
+
     if (car === "") {
       alert("Search field cannot be blank")
     } else if (!cars.includes(car)) {

@@ -64,15 +64,14 @@ $(document).ready(function() {
     renderButtons();
   });
   
-  $(document).on("click", ".gif", function() {
-    var state = $(this).attr("data-state");
-    if(state === "still") {
-      $(this).attr("src",$(this).attr("data-animate"));
-      $(this).attr("data-state","animate");
-    } else {
+  $(document).on("mouseover", ".gif", function() {
+    $(this).attr("src",$(this).attr("data-animate"));
+    $(this).attr("data-state","animate");
+  });
+
+  $(document).on("mouseout", ".gif", function() {
       $(this).attr("src",$(this).attr("data-still"));
-      $(this).attr("data-state","still"); 
-    }
+      $(this).attr("data-state","still");
   });
 
   $("#reset").on("click", function() {
